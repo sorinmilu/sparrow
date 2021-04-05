@@ -1,0 +1,4 @@
+npm install diverse chestii
+creaza o baza de date cu sql-ul din directorul database
+
+node sparrow-server.js trebuie sa ruleze (websocket)
