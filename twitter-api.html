@@ -40,7 +40,7 @@
             <p>Solicitările punctuale sunt apeluri care vizează un anumit obiect: cont, tweet, user. Acestea sunt precise și se presupune că returnează rezultate complete (deși nu e întotdeauna adevărat). Aceste instrumente sunt utilizate de către dezvoltatorii de aplicații de interacțiune cu Twitterul - clienți care permit citirea tweeturilor și trimiterea lor</p>
             <H3>Solicitări in flux</H3>
             <p>Solicitările în flux sunt conexiuni deschise la fluxul de mesaje care ajung pe Twitter. Acestea au posibilități minimale de filtrare. Odată deschisă o astfel de conexiune și filtrele specificate, mesajele încep să vină iar aplicația trecuie să le analizeze și să evalueze informațiile dorite. Aplicația Vrăbiuța folosește acest mod de conectare aplicând pe post de filtre colecțiile de hashtag-uri trimise din interfață</p>
-
+            <p>Datorită modului aparte în care se face această conexiune și a disponibilității în flux a mesajelor, stilul de programare trebuie să fie puțin diferit, orientat pe eveniment și nu clasic procedural. De aceea a fost utilizat un component node.js pentru captarea și analiza tweet-urilot, acesta oferind modalitatea de progamare potrivită</p>
         </div>
     </div>
 </div>
