@@ -555,6 +555,10 @@ body {
     background-color: #8DB600;
 }
 
+.resetbtn:hover {
+    background-color: #d5f863;
+}
+
 .stopbtn {
     padding:5px;
     margin-top: 7px;
@@ -564,4 +568,16 @@ body {
     background-color: #ed553b;
 }
 
+.stopbtn:hover {
+    background-color: #ff9d8f;
+}
 
+
+#treeMap {
+    padding-left:40px;
+    margin-top:0;
+}
+
+#leftColumn {
+    padding-top:10px;
+}
