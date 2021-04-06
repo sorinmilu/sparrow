@@ -1,29 +1,21 @@
-#selectscontainer, #bottomcontrols{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top:10px;
-}
-
-
+/*#selectscontainer, #bottomcontrols{*/
+/*    display:flex;*/
+/*    flex-direction: row;*/
+/*    flex-wrap: wrap;*/
+/*    margin-top:10px;*/
+/*}*/
 
 #footer {
     background-image: url('../img/footer-bkg.png');
     background-position: bottom;
     background-repeat: repeat-x;
     height:220px;
-
     bottom: 0;
     width: 100%;
 }
 
 #jhctext {
     padding-left:20px;
-}
-
-.quote {
-    font-style:italic;
-    padding: 15px;
 }
 
 #jhchome {
@@ -34,53 +26,8 @@
     align-items: flex-start;
 }
 
-#gamemessages {
-    margin-bottom:10px;
-    margin-top:10px;
-}
-
-.fssel {
-    display:inline-block;
-    padding: 3px;
-}
-
 .medium-b {
     width: 130px;
-}
-
-#populationreport {
-    max-height: 200px;
-    overflow: auto;
-}
-
-.jsvar {
-    color: #ff220c;
-    font-family: monospace;
-}
-
-.jsfunc {
-    color: #e2c044;
-    font-family: monospace;
-}
-
-.white {
-    color: #fff;
-    font-weight: 500;
-}
-
-
-#gridContainer {
-    padding-bottom: 10px;
-    display:inline-block;
-    width: 50%;
-    text-align: right;
-    padding-right:20px;
-    align-self: flex-start;
-}
-
-#gridContainer table {
-    margin-right: 0;
-	margin-left: auto;
 }
 
 #nonGridContainer {
@@ -90,146 +37,9 @@
     align-self: flex-start;
 }
 
-table {
-    background-color: #232c31;
-    border-spacing: 0;
-    border-collapse: collapse;
-}
-
-#populationdisplay table {
-    background-color: transparent;
-}
-
-#populationdisplay td {
-    border:none;
-    padding-bottom:1px;
-    width: 3px;
-    height: 3px;
-    margin-bottom:2px;
-    background-color: #1D2528;
-}
-
-/*#populationdisplay tr {*/
-/*    border-bottom:1px solid white;*/
-/*}*/
-
-
-td {
-    border: 1px solid #a7925a;
-    width: 8px;
-    height: 8px;
-}
-
-.stilltable {
-    align-self: center;
-}
-.stilltable td {
-        width: 5px;
-        height: 5px;
-}
-
-.stillname {
-    width: 150px;
-    float:left;
-    color: #d0782a;
-    font-size: 16px;
-    align-self: center;
-    padding-left: 10px;
-}
-
-.stilldisplay {
-    width: 200px;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 5px;
-}
-
-
 span {
     color: #222;
 }
-
-td.dead {
-    background-color: transparent;
-}
-
-td.live {
-    background-color: #92aa83;
-}
-
-#gamereport {
-    margin-top: 10px;
-    color:#809bbd;
-    height: 20px;
-    font-size: 22px;
-    margin-bottom:10px;
-
-
-}
-
-#stillsreport {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-#scenesreport {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-}
-
-.mediumscenetable, .smallscenetable, .largescenetable {
-    align-self: center;
-     /*flex: 1 0 100%;*/
-}
-
-
-#populationdisplay table td {
-        width: 5px;
-        height: 5px;
-}
-
-.smallscenetable td {
-        width: 10px;
-        height: 10px;
-}
-
-.mediumscenetable td {
-        width: 5px;
-        height: 5px;
-}
-
-.largescenetable td {
-        width: 1px;
-        height: 1px;
-}
-
-.structdescription {
-    color: #ddca7e;
-    width: auto;
-}
-
-.scenename, #gamemessages {
-    color: #d0782a;
-    font-size: 16px;
-    align-self: center;
-    padding-left: 10px;
-}
-
-.scenedisplay {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 5px;
-    width: 500px;
-    margin-bottom: 20px;
-    margin-right:3px;
-    padding: 5px;
-    border:1px solid #a7925a;
-}
-
-
 
 html {
     font-family: sans-serif;
@@ -533,62 +343,50 @@ body {
 
 .main {
     position: relative;
-    padding-top: 30vh;
-    padding-right: 20px;
-    padding-left: 60px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-box-align: end;
-    -webkit-align-items: flex-end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    font-weight: 300
-}
-
-.main-game {
-    position: relative;
-    display:flex;
     padding-top: 20vh;
     padding-right: 20px;
     padding-left: 60px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-box-align: end;
-    -webkit-align-items: flex-end;
-    -ms-flex-align: end;
-    align-items: flex-end;
     font-weight: 300
 }
+
+/*.main-game {*/
+/*    position: relative;*/
+/*    display:flex;*/
+/*    padding-top: 20vh;*/
+/*    padding-right: 20px;*/
+/*    padding-left: 60px;*/
+/*    -webkit-box-orient: horizontal;*/
+/*    -webkit-box-direction: normal;*/
+/*    -webkit-flex-direction: row;*/
+/*    -ms-flex-direction: row;*/
+/*    flex-direction: row;*/
+/*    -webkit-flex-wrap: nowrap;*/
+/*    -ms-flex-wrap: nowrap;*/
+/*    flex-wrap: nowrap;*/
+/*    -webkit-box-align: end;*/
+/*    -webkit-align-items: flex-end;*/
+/*    -ms-flex-align: end;*/
+/*    align-items: flex-end;*/
+/*    font-weight: 300*/
+/*}*/
 
 .main-text {
     position: relative;
     padding-top: 15vh;
     padding-right: 20px;
     padding-left: 60px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-box-align: end;
-    -webkit-align-items: flex-end;
-    -ms-flex-align: end;
-    align-items: flex-end;
+    /*-webkit-box-orient: horizontal;*/
+    /*-webkit-box-direction: normal;*/
+    /*-webkit-flex-direction: row;*/
+    /*-ms-flex-direction: row;*/
+    /*flex-direction: row;*/
+    /*-webkit-flex-wrap: nowrap;*/
+    /*-ms-flex-wrap: nowrap;*/
+    /*flex-wrap: nowrap;*/
+    /*-webkit-box-align: end;*/
+    /*-webkit-align-items: flex-end;*/
+    /*-ms-flex-align: end;*/
+    /*align-items: flex-end;*/
     font-weight: 300
 }
 
@@ -618,6 +416,7 @@ body {
     line-height: 58px;
     letter-spacing: -.5px;
     margin-top:15px;
+    margin-bottom:15px;
 }
 
 
