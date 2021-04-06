@@ -39,7 +39,7 @@ socket.on('request', function(request) {
             //definim callbackurile necesare pentru tagCount
 
             //intervalCb este funcția care va fi executat de tagCount la finalul unui interval de colectare
-            var intervalCb = function (err, results, twcount, langs) {
+            var intervalCb = function (err, results, twcount, langs, intervalcount) {
                 if (err) {
                     console.error(err);
                 } else {
@@ -47,7 +47,7 @@ socket.on('request', function(request) {
                     tagsarray.forEach(function (tag) {
                         finalCount[tag] += results[tag];
                     });
-                    connection.sendUTF(JSON.stringify({'dt': 'data', 'data': finalCount, 'langs': langs, 'twcount' : twcount}));
+                    connection.sendUTF(JSON.stringify({'dt': 'data', 'data': finalCount, 'langs': langs, 'twcount' : twcount, 'intervalcount': intervalcount}));
                 }
             };
 

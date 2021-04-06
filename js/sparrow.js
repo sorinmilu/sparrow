@@ -99,7 +99,8 @@ function porneste_citirea_ws(tagsarray) {
             var twdata = received.data;
             var langs = received.langs;
             var twcount = received.twcount;
-            document.getElementById('outcontent').insertAdjacentHTML('beforeend', '<div>date primite... '+ twcount + '</div>');
+            var intervalcount = received.intervalcount;
+            document.getElementById('outcontent').insertAdjacentHTML('beforeend', '<div>tweet-uri cu taguri... '+ intervalcount + '</div>');
             document.getElementById('outcontent').scrollIntoView(false);
             var sortablelangs = [];
             for (var lang in langs) {
